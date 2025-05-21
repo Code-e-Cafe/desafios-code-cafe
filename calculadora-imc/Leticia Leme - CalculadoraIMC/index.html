@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <title>Calculadora IMC</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="title">Calculadora IMC</div>
-            <div class="agrupar">
-                <div class="input">
-
-                    <input type="text" id="nome" placeholder="Digite seu nome">
-                </div>
-                <div class="input">
-
-                    <input type="number" id="altura" placeholder="Altura(cm)">
-                </div>
-                <div class="input">
-
-                    <input type="number" id="peso" placeholder="Peso(kg)">
-                </div>
-            </div>
-            <button onclick="calcularImc()">Calcular</button>
-            <div class="result" id="resultado"></div>
+      <div class="container">
+        <div class="title">Calculadora IMC</div>
+        <div class="agrupar">
+          <div class="input">
+            <input type="text" id="nome" placeholder="Digite seu nome" />
+          </div>
+          <div class="input">
+            <input type="number" id="altura" placeholder="Altura(cm)" />
+          </div>
+          <div class="input">
+            <input type="number" id="peso" placeholder="Peso(kg)" />
+          </div>
         </div>
+        <button>Calcular</button>
+        <div class="result" id="resultado"></div>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
