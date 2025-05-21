@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    border: solid #000000 2px;
+    background-color: #99b2b7;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0px 15px 0 #3e3e415e;
+} 
+
+h1 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #78b8c5;
+    font-family: 'Cherry Bomb One';
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid #000000 1px;
+    text-align: center ;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 0.1px;
+    padding: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background: #ffffff6c;
+    box-shadow: 0 0px 5px 0 #3e3e415e;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid #ffffff2e;
+}
+
+button {
+    background-color: #ffff00;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    transition: transform 0.1s ease;
+} 
+
+button:active{
+    transform: scale(0.9);
+}
