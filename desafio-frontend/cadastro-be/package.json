@@ -1,0 +1,19 @@
+{
+  "name": "cadastro-be",
+  "version": "1.0.50",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^1.3.0",
+    "@elysiajs/swagger": "^1.3.0",
+    "elysia": "latest",
+    "marked": "^15.0.12"
+  },
+  "devDependencies": {
+    "@elysiajs/eden": "^1.3.2",
+    "bun-types": "^1.2.14"
+  },
+  "module": "src/index.ts"
+}

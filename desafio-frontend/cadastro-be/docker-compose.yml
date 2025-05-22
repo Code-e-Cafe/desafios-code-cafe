@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  cadastro-be:
+    build: .
+    ports:
+      - "3003:3003"
+    volumes:
+      - .:/usr/src/app
+      # Volume para o banco de dados SQLite para persistência
+      - ./cadastro.db:/usr/src/app/cadastro.db
+    environment:
+      # Variáveis de ambiente, se necessário
+      # NODE_ENV: development
+      PORT: 3003
