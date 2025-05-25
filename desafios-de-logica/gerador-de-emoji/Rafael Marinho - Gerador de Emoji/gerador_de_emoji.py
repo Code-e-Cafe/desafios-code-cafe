@@ -26,4 +26,7 @@ def main():
     
     # Gera e exibe um emoji aleatório
     emoji = emoji_generator()
-    print(f"Emoji gerado: {emoji}") 
+    print(f"Emoji gerado: {emoji}")
+
+if __name__ == "__main__":
+    main()
