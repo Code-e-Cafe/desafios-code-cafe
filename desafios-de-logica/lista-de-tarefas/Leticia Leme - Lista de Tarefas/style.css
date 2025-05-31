@@ -30,6 +30,12 @@ section {
     border: #0000005d 3px solid;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 li {
     display: flex;
     align-items: center;
