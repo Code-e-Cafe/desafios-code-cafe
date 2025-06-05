@@ -13,7 +13,7 @@ Aqui você encontrará pastas com diferentes **tópicos fundamentais de JavaScri
 
 1. **Escolha um tópico** que você deseja praticar.
 2. Dentro da pasta do tópico escolhido, haverá uma subpasta no seguinte modelo: `00-topico-escolhido`.
-3. **Copie essa pasta** para a mesma pasta do tópico.
+3. **Copie e cole essa pasta** no mesmo nível dentro pasta do tópico.
 4. **Renomeie a nova pasta** usando o seguinte formato:
 
 🔹 **Exemplo:**  
@@ -29,13 +29,13 @@ A estrutura do repositório ficará assim:
 
 ```text
 📁 desafios-javascript
-├── 📁 variaveis
+├── 📁 01-variaveis
 │   ├── 📁 00-variaveis
 │   └── 📁 Igor Gazineo - variaveis
-├── 📁 operadores
+├── 📁 02-operadores
 │   ├── 📁 00-operadores
 │   └── 📁 Igor Gazineo - operadores
-├── 📁 estruturas-condicionais
+├── 📁 03-estruturas-condicionais
 │   ├── 📁 00-estruturas-condicionais
 │   └── 📁 Igor Gazineo - estruturas-condicionais
 ...
