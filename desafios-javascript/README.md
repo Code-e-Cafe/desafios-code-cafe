@@ -27,17 +27,19 @@ Aqui você encontrará pastas com diferentes **tópicos fundamentais de JavaScri
 
 A estrutura do repositório ficará assim:
 
+```text
 📁 desafios-javascript
 ├── 📁 variaveis
-│ ├── 📁 00-variaveis
-│ └── 📁 Igor Gazineo - variaveis
+│   ├── 📁 00-variaveis
+│   └── 📁 Igor Gazineo - variaveis
 ├── 📁 operadores
-│ ├── 📁 00-operadores
-│ └── 📁 Igor Gazineo - operadores
+│   ├── 📁 00-operadores
+│   └── 📁 Igor Gazineo - operadores
 ├── 📁 estruturas-condicionais
-│ ├── 📁 00-estruturas-condicionais
-│ └── 📁 Igor Gazineo - estruturas-condicionais
+│   ├── 📁 00-estruturas-condicionais
+│   └── 📁 Igor Gazineo - estruturas-condicionais
 ...
+```
 
 Cada pasta de tópico conterá instruções e desafios simples, prontos para você praticar!
 
