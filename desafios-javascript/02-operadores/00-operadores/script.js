@@ -53,7 +53,7 @@
 // 🧠 Exercício 9
 // Usando as mesmas variáveis do exercício anterior, altere `temIdadeMinima` para false
 // Depois crie uma variável `bloqueado`.
-// Ela deve ser `true` se **uma das duas variáveis for falsa**(use ||)
+// Ela deve ser `true` se **uma das duas variáveis for verdadeira**(use ||)
 // Exiba no console o valor de `bloqueado`.
 // ----------------------------
 
