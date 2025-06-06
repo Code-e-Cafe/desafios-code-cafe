@@ -21,3 +21,9 @@ def gerar_senhas(caracteres:dict, comprimento:int, criterios:list)->str:
 
     # Retornando a senha com um string
     return "".join(senha)
+
+def salvar_senha(senhas:list, nome_do_arquivo="minhas_senhas.txt")->None:
+    with open(nome_do_arquivo, 'a') as arquivo:
+        for senha in senhas:
+            arquivo.write(senha + '\n')
+    print("Senha salva com sucesso!")
