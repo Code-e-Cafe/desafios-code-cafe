@@ -8,79 +8,86 @@
 // Crie uma variável chamada `frase` com o valor "JavaScript é incrível".
 // Exiba o tamanho da string usando .length
 // ----------------------------
-
+const frase = "JavaScript é incrível";
+console.log(frase);
 // ----------------------------
 // 🧠 Exercício 2
 // Exiba os caracteres das posições 0, 5 e 10 da variável `frase` usando charAt()
 // ----------------------------
-
+const positions = [0, 5, 10];
+for (let i = 0; i < 3; i++) {
+  console.log(frase.charAt(positions[i]));
+}
 // ----------------------------
 // 🧠 Exercício 3
 // Use o método toUpperCase() para exibir a frase toda em letras maiúsculas.
 // ----------------------------
-
+console.log(frase.toUpperCase());
 // ----------------------------
 // 🧠 Exercício 4
 // Use o método toLowerCase() para exibir a frase toda em letras minúsculas.
 // ----------------------------
-
+console.log(frase.toLowerCase());
 // ----------------------------
 // 🧠 Exercício 5
 // Verifique se a palavra "incrível" está dentro da frase usando includes()
 // ----------------------------
-
+console.log(frase.includes("incrível"));
 // ----------------------------
 // 🧠 Exercício 6
 // Verifique se a frase começa com "Java" usando startsWith()
 // ----------------------------
-
+console.log(frase.startsWith("Java"));
 // ----------------------------
 // 🧠 Exercício 7
 // Verifique se a frase termina com "l" usando endsWith()
 // ----------------------------
-
+console.log(frase.endsWith("l"));
 // ----------------------------
 // 🧠 Exercício 8
 // Substitua a palavra "incrível" por "fantástico" usando replace()
 // ----------------------------
-
+console.log(frase.replace("incrível", "fantástico"));
 // ----------------------------
 // 🧠 Exercício 9
 // Corte a string para exibir apenas a palavra "JavaScript" usando slice()
 // ----------------------------
-
+console.log(frase.slice(0, frase.indexOf(" ")));
 // ----------------------------
 // 🧠 Exercício 10
 // Divida a frase em palavras usando split(" ") e exiba o array resultante.
 // ----------------------------
-
+console.log(frase.split(" "));
 // ----------------------------
 // 🧠 Exercício 11
 // Una as palavras do array anterior usando join("-") para formar uma nova string.
 // ----------------------------
-
+console.log(frase.split(" ").join("-"));
 // ----------------------------
 // 🧠 Exercício 12
 // Remova os espaços extras da string "   Olá, mundo!   " usando trim()
 // ----------------------------
-
+console.log("   Olá, mundo!   ");
+console.log("   Olá, mundo!   ".trim());
 // ----------------------------
 // 🧠 Exercício 13
 // Crie uma string com o valor "banana".
 // Use padStart() para deixá-la com 10 caracteres, preenchendo com "*"
 // ----------------------------
-
+console.log("banana".padStart(10, "*"));
 // ----------------------------
 // 🧠 Exercício 14
 // Agora use padEnd() para fazer o mesmo, preenchendo com "-"
 // ----------------------------
-
+console.log("banana".padStart(10, "-"));
 // ----------------------------
 // 🧠 Exercício 15
 // Crie uma string "Aprender JavaScript é divertido!".
 // Substitua "divertido" por "essencial" e exiba a nova frase.
 // ----------------------------
-
+console.log(
+  "Aprender JavaScript é divertido!".replace("divertido", "essencial")
+);
 // 📘 DESAFIOS BÔNUS – NÍVEL EXTRA
 // Desafios a seguir exigem mais lógica e/ou o uso combinado de métodos de strings.
 
