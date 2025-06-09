@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="src/assets/calculator-favicon.png" type="image/x-icon">
+    <script src="https://cdn.counter.dev/script.js" data-id="33f78ff6-536a-45bc-92b9-1b262ec69e8d" data-utcoffset="-3"></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="src/stylesheets/reset.css">
+    <link rel="stylesheet" href="src/stylesheets/preset.css">
+    <link rel="stylesheet" href="src/stylesheets/main.css">
+    <link rel="stylesheet" href="src/stylesheets/sidebar.css">
+    <link rel="stylesheet" href="src/stylesheets/footer.css">
+    <link rel="stylesheet" href="src/stylesheets/responsive.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/db1c54e319.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Coustard:wght@400;900&family=Dancing+Script:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Major+Mono+Display&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Orbitron:wght@400..900&family=Overpass+Mono:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Unica+One&family=VT323&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <h1>Calculator</h1>
+
+    <main id="calculator">
+        <section id="display">
+            <h2 id="result"></h2>
+            <h3 id="typed"></h3>
+        </section>
+
+        <section id="keyboard">
+            <div class="bloco-de-botoes" id="actions">
+                <button class="btn-action" id="clear"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="btn-action" id="reset"><i class="fa-solid fa-eraser"></i></button>
+                <button class="btn-action" id="backspace"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn-action" id="enter"><i class="fa-solid fa-calculator"></i></button>
+
+            </div>
+
+            <div class="bloco-de-botoes" id="numbers">
+                <button class="btn-number" id="btn-number-1">1</button>
+                <button class="btn-number" id="btn-number-2">2</button>
+                <button class="btn-number" id="btn-number-3">3</button>
+                <button class="btn-number" id="btn-number-4">4</button>
+                <button class="btn-number" id="btn-number-5">5</button>
+                <button class="btn-number" id="btn-number-6">6</button>
+                <button class="btn-number" id="btn-number-7">7</button>
+                <button class="btn-number" id="btn-number-8">8</button>
+                <button class="btn-number" id="btn-number-9">9</button>
+            </div>
+            
+            <div class="bloco-de-botoes" id="operators">
+                <button class="btn-operator" id="plus"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn-operator" id="minus"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn-operator" id="times"><i class="fa-solid fa-xmark"></i></button>
+                <button class="btn-operator" id="divide"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            
+            <div class="bloco-de-botoes" id="operators2">
+                <button class="btn-number" id="btn-number-0">0</button>
+                <button class="btn-operator" id="power"><i class="fa-solid fa-superscript"></i></button>
+                <button class="btn-special" id="sqrt"><i class="fa-solid fa-square-root-variable"></i></button>
+                <button class="btn-special" id="float">,</button>
+                <button class="btn-special" id="invert"><i class="fa-solid fa-plus-minus"></i></button>
+                <button class="btn-operator" id="percent"><i class="fa-solid fa-percent"></i></button>
+                
+            </div>
+            
+        </section>
+    </main>
+
+    
+    <aside id="sidebar-history">
+        <button id="btn-box-history">View History</button>
+
+        <section id="box-history">
+            <ol id="history-list">
+            </ol>
+        </section>
+    </aside>
+    
+    <aside id="sidebar-theme">
+        <button id="btn-box-themes">Select a theme</button>
+
+        <section id="box-themes">
+            <ul id="themes-list" >
+                <li><button class="btn-theme" id="cyberpunk">city</button></li>
+                <li><button class="btn-theme" id="lofi">coffee</button></li>
+                <li><button class="btn-theme" id="fall">fall</button></li>
+                <li><button class="btn-theme" id="harbor">harbor</button></li>
+                <li><button class="btn-theme" id="balcony">balcony</button></li>
+                <li><button class="btn-theme" id="rain">rain</button></li>
+                <li><button class="btn-theme" id="sakura">sakura</button></li>
+            </ul>
+        </section>
+    </aside>
+
+    <footer>
+        <div class="developed-by">
+            <p id="dev-by"> 
+                Developed with 💜 by 
+            </p>
+            <a href="https://alucinado-dev.vercel.app" target="_blank" rel="noopener noreferrer"></a>                
+            <img src="src/assets/ALucin4do-logo.png" alt="logo of ALucin4do">
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/globalFunctions.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

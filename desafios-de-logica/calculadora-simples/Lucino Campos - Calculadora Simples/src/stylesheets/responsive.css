@@ -1,0 +1,55 @@
+@media screen and (max-width: 964px) {
+    :root{
+        font-size: 50%;
+    }
+
+    #sidebar-history #box-history #history-list li{
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        height: auto;
+        width: auto;
+    }
+    
+    aside{
+        position: relative;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    #sidebar-theme #box-themes{
+        display: none;
+
+        &.active{
+            display: block;
+        }
+    }
+
+    #sidebar-history #btn-box-history{
+        align-self: center;
+    }
+
+    #sidebar-history #box-history{
+        display: none;
+
+        &.active{
+            display: block;
+        }
+    }
+
+    #sidebar-history #box-history #history-list li{
+        max-width: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    h1{
+        font-size: 2.4rem;
+    }
+}
