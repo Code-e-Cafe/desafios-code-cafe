@@ -1,0 +1,189 @@
+:root{
+    --calculator-color: #C0C0C0;
+
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    place-items: center;
+    padding: 2rem 6rem;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    backdrop-filter: brightness(0.35);
+
+}
+
+h1{
+    font-size: 4.8rem;
+    font-weight: 900;
+    text-align: center;
+    backdrop-filter: brightness(0.15) blur(10px);
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    color: var(--title-color);
+    text-shadow: 0 0 5px var(--title-color);
+}
+
+aside{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+}
+
+button{
+    border: none;
+    color: var(--page-buttons-text);
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: var(--buttons-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:active{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~           TEMAS          ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+[data-theme='cyberpunk'] {
+    --title-color: #00E5FF;
+    --display-color: #00CED1;
+    --display-text-color: #000000;
+    --buttons-color: #F8F8FF;
+    --buttons-text-color:#FF00FF;
+    --page-buttons:  #FF2A6D;
+    --page-buttons-text: #F8F8FF;
+
+    --bg-image: url('/src/imgs/cyberpunk-bg.gif');
+
+    --title-font: "Press Start 2P", system-ui;
+    --display-font: "VT323", monospace;
+    --buttons-font: "Michroma", sans-serif;
+    --page-font: "Chakra Petch", sans-serif;
+}
+
+
+[data-theme='lofi'] {
+    --title-color: #F6A756;
+    --display-color: #2E1E25;
+    --display-text-color: #F9E4B7;
+    --buttons-color: #3C2B39;
+    --buttons-text-color:#E4C2F2;
+    --page-buttons:  #493B4F;
+    --page-buttons-text: #FFDCA8;
+
+    --bg-image: url('/src/imgs/lofi-bg.gif');
+
+    --title-font: "Zen Tokyo Zoo", system-ui;
+    --display-font: "IBM Plex Mono", monospace;
+    --buttons-font: "Quicksand", sans-serif;
+    --page-font: "Titillium Web", sans-serif;
+
+
+}
+
+[data-theme='fall'] {
+    --title-color: #B94EFF;
+    --display-color: #311F2C;
+    --display-text-color: #FFACAC;
+    --buttons-color: #FAE2C8;
+    --buttons-text-color:#6C1D45;
+    --page-buttons:  #FF764E;
+    --page-buttons-text: #2F1B17;
+
+    --bg-image: url('/src/imgs/fall-bg.gif');
+
+    --title-font: "Unica One", sans-serif;
+    --display-font: "Major Mono Display", monospace;
+    --buttons-font: "Cairo", sans-serif;
+    --page-font: "Bebas Neue", sans-serif;
+}
+
+[data-theme='harbor'] {
+    --title-color: #82f1d9;
+    --display-color: #D1EFFF;
+    --display-text-color: #1F3A93;
+    --buttons-color: #FCEFD1;
+    --buttons-text-color:#5B3C11;
+    --page-buttons: #183D3D ;
+    --page-buttons-text: #A5D8C2;
+
+    --bg-image: url('/src/imgs/harbor-bg.gif');
+
+    --title-font: "Coustard", serif;
+    --display-font: "Space Mono", monospace;
+    --buttons-font: "Karla", sans-serif;
+    --page-font: "Cabin", sans-serif;
+}
+
+[data-theme='balcony'] {
+    --title-color: #A3F2F2;
+    --display-color: #131F20;
+    --display-text-color: #8CFFE7;
+    --buttons-color: #2F3E3E;
+    --buttons-text-color:#FFEFD4;
+    --page-buttons: #6AE1C1 ;
+    --page-buttons-text: #103932;
+
+    --bg-image: url('/src/imgs/balcony-bg.gif');
+
+    --title-font: "Orbitron", sans-serif;
+    --display-font: "Share Tech Mono", monospace;
+    --buttons-font: "Rajdhani", sans-serif;
+    --page-font: "Prompt", sans-serif;
+}
+
+[data-theme='rain'] {
+    --title-color: 	#BFD9E5;
+    --display-color: #32547B;
+    --display-text-color: #1D1F25;
+    --buttons-color: #DCE2DD;
+    --buttons-text-color:#38423F;
+    --page-buttons: #92A48F ;
+    --page-buttons-text: #1F2E28;
+
+    --bg-image: url('/src/imgs/rain-bg.gif');
+
+    --title-font: "Cinzel", serif;
+    --display-font: "Overpass Mono", monospace;
+    --buttons-font: "Karla", sans-serif;
+    --page-font: "Merriweather Sans", sans-serif;
+}
+
+[data-theme='sakura'] {
+    --title-color: 	#DE5DA8;
+    --display-color: #FF87B2;
+    --display-text-color: #1C0B1E;
+    --buttons-color: #FFE5F0;
+    --buttons-text-color:#6E257E;
+    --page-buttons:  #FFD3E1;
+    --page-buttons-text: #73196D ;
+
+    --bg-image: url('/src/imgs/sakura-bg.gif');
+
+    --title-font: 'Dancing Script', Courier, cursive;
+    --display-font: "VT323", monospace;
+    --buttons-font: "Poppins", sans-serif;
+    --page-font: "Comfortaa", sans-serif;
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+</head>
+<body>
+    <h1> Sorteador !!</h1>
+
+    <div id="novo-nome">
+        <label for="input-nome"> Adicione um novo nome</label>
+        <input type="text" id="input-nome" >
+        <button onclick="addParticipant()">Adicionar</button>
+    </div>
+
+    <ul id="participantes">
+
+    </ul>
+
+    <button id="sorteio" onclick="sortear()"> Sortear agora!</button>
+
+    <div id="resultado">
+        <h2> o vencedor(a) do sorteio foi <span id="vencedor"> </span> !!!</h2>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
