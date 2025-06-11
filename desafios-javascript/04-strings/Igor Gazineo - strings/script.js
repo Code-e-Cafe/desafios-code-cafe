@@ -96,11 +96,18 @@ console.log(
 // Crie uma função que receba uma string e retorne essa string invertida.
 // Ex: "javascript" → "tpircsavaj"
 // ----------------------------
-
+const inversorDeString = function (string) {
+  let stringInvertida = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    stringInvertida += string[i];
+  }
+  return stringInvertida;
+};
+console.log(inversorDeString("javascript"));
 // ----------------------------
 // 💡 Desafio Bônus 17
 // Crie uma função que conte quantas vogais (a, e, i, o, u) existem em uma string.
-// Ex: "JavaScript é incrível" → 8 vogais
+// Ex: "JavaScript é incrível" → 7 vogais
 // ----------------------------
 
 // ----------------------------
