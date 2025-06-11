@@ -109,25 +109,65 @@ console.log(inversorDeString("javascript"));
 // Crie uma função que conte quantas vogais (a, e, i, o, u) existem em uma string.
 // Ex: "JavaScript é incrível" → 7 vogais
 // ----------------------------
+const contadorDeVogais = function (string) {
+  const vogais = "aáeéiíoóuú";
+  let quantidadeDeVogais = 0;
 
+  for (let i = 0; i < string.length; i++) {
+    for (let i2 = 0; i2 < vogais.length; i2++) {
+      if (string[i] === vogais[i2]) {
+        quantidadeDeVogais++;
+      }
+    }
+  }
+  console.log(
+    `A quantidade de vogias na string'${string}' é ${quantidadeDeVogais}.`
+  );
+};
+contadorDeVogais("JavaScript é incrível mesmo!");
 // ----------------------------
 // 💡 Desafio Bônus 18
 // Crie uma função que receba um nome completo e retorne as iniciais.
 // Ex: "Igor Gazineo" → "IG"
 // ----------------------------
-
+const obtemAsIniciaisDoNome = function (nome) {
+  const nomeEmArray = nome.split(" ");
+  let iniciais = "";
+  nomeEmArray.forEach((nome) => {
+    iniciais += nome[0];
+  });
+  return iniciais;
+};
+console.log(obtemAsIniciaisDoNome("Igor Gazineo"));
 // ----------------------------
 // 💡 Desafio Bônus 19
 // Crie uma função que formate um número de telefone no formato (XX) XXXX-XXXX.
 // A função deve receber uma string com apenas os números, ex: "1198765432"
 // ----------------------------
-
+const formatadorDeTelefone = function (telefone) {
+  const telefoneEmString = String(telefone);
+  const primeirosDoisDigitos = telefoneEmString.slice(0, 2);
+  const terceiroAoSextoDigito = telefoneEmString.slice(2, 6);
+  const ultimosDigitos = telefoneEmString.slice(6);
+  console.log(
+    `(${primeirosDoisDigitos}) ${terceiroAoSextoDigito}-${ultimosDigitos}`
+  );
+};
+formatadorDeTelefone(1198765432);
 // ----------------------------
 // 💡 Desafio Bônus 20
 // Crie uma função que transforme a primeira letra de cada palavra de uma frase em maiúscula.
 // Ex: "javascript é incrível" → "Javascript É Incrível"
 // ----------------------------
-
+const primeiraLetraParaMaiuscula = function (string) {
+  const arrayDePalavrasFormatado = [];
+  const arrayDePalavras = string.split(" ");
+  for (const palavra of arrayDePalavras) {
+    arrayDePalavrasFormatado.push(palavra[0].toUpperCase() + palavra.slice(1));
+  }
+  console.log(arrayDePalavrasFormatado.join(" "));
+};
+primeiraLetraParaMaiuscula("javascript é incrível");
 // ----------------------------
 // 💡 Desafio Bônus 21
 // Crie uma função que receba uma string e retorne quantas palavras ela contém.
