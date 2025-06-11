@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/background-IMC.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.gif-nuvem img {
+    width: 300px;
+    height: 200px;
+}
+
+.gif-nuvem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+.gif-mulher img{
+    width: 80px;
+    height: 250px;
+}
+
+.gif-mulher{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    width: 400px;
+    height: 280px;
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.3), rgba(255, 255, 255, 0.2));
+    border: 2px solid rgba(200, 230, 255, 0.4);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5), 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    overflow: hidden; /* evita que filhos ultrapassem o header */
+}
+
+.textos h1 {
+    text-align: center;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 47px;
+    color: #7fffd4;
+    text-shadow: 0 0 8px rgba(127, 255, 212, 0.5);
+    opacity: 0.8;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo-calc {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-decoration: underline 1px solid rgba(255,255,255,0.2);
+    text-underline-offset: 4px; 
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    color: #0e0b22;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* efeito vidro */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1);
+    outline: none;
+    transition: 0.3s ease;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgba(9, 39, 189, 0.493);
+    text-align: center;
+}
+
+input:focus {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+button {
+    padding: 8px 120px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(145deg, rgba(0,255,200,0.3), rgba(173,216,230,0.3));
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(10px) brightness(1.2);
+    box-shadow: 0 4px 10px rgba(0, 255, 200, 0.3),
+                inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, rgba(173,216,230,0.4), rgba(0,255,200,0.4));
+    box-shadow: 0 6px 15px rgba(0, 255, 200, 0.4),
+                inset 0 2px 2px rgba(255, 255, 255, 0.5);
+    transform: scale(1.03);
+}
+
+button:active {
+    opacity: .7 ;
+}
+/* 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; */
+
+.feedback {
+    width: 600px;
+    height: 10px;
+    text-align: center;
+    
+}
+
+.feedback p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.3), rgba(255, 255, 255, 0.2));
+    border: 2px solid rgba(200, 230, 255, 0.4);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5), 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.feedback {
+    display: none;
+}
