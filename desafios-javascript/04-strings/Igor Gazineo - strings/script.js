@@ -173,13 +173,21 @@ primeiraLetraParaMaiuscula("javascript é incrível");
 // Crie uma função que receba uma string e retorne quantas palavras ela contém.
 // Considere que as palavras estão separadas por espaço.
 // ----------------------------
+const contadorDePalavras = function (frase) {
+  const quantidadeDePalavras = frase.split(" ").length;
 
+  return `A frase "${frase}" tem ${quantidadeDePalavras} palavras.`;
+};
+
+console.log(contadorDePalavras("Javascript é incrível mesmo!"));
 // ----------------------------
 // 💡 Desafio Bônus 22
 // Crie uma função que substitua todos os espaços de uma string por underline "_"
 // Ex: "isso é um teste" → "isso_é_um_teste"
 // ----------------------------
+const trocaEspacoPorUnderline = (frase) => frase.replaceAll(" ", "_");
 
+console.log(trocaEspacoPorUnderline("isso é um teste"));
 // ----------------------------
 // 💡 Desafio Bônus 23
 // Crie uma função que receba uma string e retorne se ela é um palíndromo.
@@ -197,3 +205,17 @@ primeiraLetraParaMaiuscula("javascript é incrível");
 // Crie uma função que receba uma string e remova todos os números dela.
 // Ex: "abc123def456" → "abcdef"
 // ----------------------------
+const removeNumeros = (string) => {
+  const numeros = "0123456789";
+  const characters = string.split("");
+  let stringSemNumeros = "";
+
+  characters.forEach((character) => {
+    if (!numeros.includes(character)) {
+      stringSemNumeros += character;
+    }
+  });
+  console.log(stringSemNumeros);
+};
+
+removeNumeros("abc123def456");
