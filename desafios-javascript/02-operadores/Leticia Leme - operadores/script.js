@@ -49,12 +49,18 @@ console.log(resultadoDiv);
 // Crie uma variável `numero = 7`
 // Exiba o resto da divisão de `numero` por 2 (usando o operador %)
 // ----------------------------
-
+const numero = 7;
+porcentagem = numero % 2;
+resultadoPorc = porcentagem;
+console.log(resultadoPorc)
 // ----------------------------
 // 🧠 Exercício 6
 // Crie uma variável `idade = 18`
 // Verifique se a idade é maior ou igual a 18 (>=) e exiba o resultado (true/false)
 // ----------------------------
+const idade = 18;
+const maiorDeIdade = idade >= 18;
+console.log(maiorDeIdade);
 
 // ----------------------------
 // 🧠 Exercício 7
@@ -62,12 +68,25 @@ console.log(resultadoDiv);
 // Verifique se `x == y` e depois se `x === y`. Explique a diferença nos comentários.
 // ----------------------------
 
+const x =10;
+const y = '10';
+const verif1 = x == y; // == verifica apenas o valor, então o valor será TRUE
+const verif2 = x === y; // === verifica o valor e o tipo, então o valor será FALSE
+console.log(verif1);
+console.log(verif2);
+
+
 // ----------------------------
 // 🧠 Exercício 8
 // Crie duas variáveis booleanas: `temCarteira = true`, `temIdadeMinima = true`
 // Crie uma variável `podeDirigir` que seja true apenas se as duas forem true (use &&)
 // Exiba o resultado da variável `podeDirigir` no console.
 // ----------------------------
+
+const temCarteira = true;
+const temIdadeMinima = true;
+const podeDirigir = temCarteira && temIdadeMinima;
+console.log(podeDirigir);
 
 // ----------------------------
 // 🧠 Exercício 9
@@ -77,8 +96,19 @@ console.log(resultadoDiv);
 // Exiba no console o valor de `bloqueado`.
 // ----------------------------
 
+const temCarteiraa = true;
+const temIdadeMinimaa = false;
+const bloqueado = temCarteiraa || temIdadeMinimaa;
+console.log(bloqueado);
+
+
 // ----------------------------
 // 🧠 Exercício 10
 // Crie uma variável `pontuacao = 70`
 // Use um operador ternário para exibir "Aprovado" se pontuacao >= 60, caso contrário exibir "Reprovado"
 // ----------------------------
+
+const pontuacao = 70;
+const resultado = pontuacao >= 60 ? 'Aprovado' : 'Reprovado';
+console.log(resultado);
+
