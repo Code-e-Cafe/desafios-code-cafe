@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #9AA6B2;
+    --secondary-color: #BCCCDC;
+    --auxiliary-color: #F8FAFC;
+    --contrast-color: #D9EAFD;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--contrast-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-section {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.main-section .input-section {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+.main-section .input-section input {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--auxiliary-color);
+    outline: var(--primary-color) solid 5px;
+    border: 0;
+    padding: 5px 110px 5px 20px;
+    height: 50px;
+    width: 400px;
+    border-radius: 25px;
+    overflow-x: hidden;
+}
+
+.main-section .input-section input::placeholder {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.main-section .input-section button {
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--auxiliary-color);
+    border: none;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    border-radius: 0px 25px 25px 0px;
+    transition: 0.2s;
+}
+
+.main-section .input-section button:hover {
+    background-color: var(--primary-color);
+    color: var(--auxiliary-color);
+}
+
+.main-section .result-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.main-section .result-section .candidates-list {
+    width: 300px;
+    height: 250px;
+    background-color: var(--auxiliary-color);
+    outline: var(--primary-color) solid 5px;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.main-section .result-section .candidates-list .candidate {
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.main-section .result-section #draw-button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    width: 100px;
+    color: var(--primary-color);
+    background-color: var(--auxiliary-color);
+    outline: var(--primary-color) solid 5px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.main-section .result-section #draw-button:hover {
+    background-color: var(--primary-color);
+    color: var(--auxiliary-color);
+}
+
+.chosen {
+    text-decoration: line-through;
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--contrast-color);
+}
+
+.hidden {
+    display: none;
+}
