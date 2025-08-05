@@ -93,7 +93,7 @@
 // ----------------------------
 // 💡 Desafio Bônus 17
 // Crie uma função que conte quantas vogais (a, e, i, o, u) existem em uma string.
-// Ex: "JavaScript é incrível" → 8 vogais
+// Ex: "JavaScript é incrível" → 7 vogais
 // ----------------------------
 
 // ----------------------------

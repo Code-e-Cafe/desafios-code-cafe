@@ -8,79 +8,86 @@
 // Crie uma variável chamada `frase` com o valor "JavaScript é incrível".
 // Exiba o tamanho da string usando .length
 // ----------------------------
-
+const frase = "JavaScript é incrível";
+console.log(frase);
 // ----------------------------
 // 🧠 Exercício 2
 // Exiba os caracteres das posições 0, 5 e 10 da variável `frase` usando charAt()
 // ----------------------------
-
+const positions = [0, 5, 10];
+for (let i = 0; i < 3; i++) {
+  console.log(frase.charAt(positions[i]));
+}
 // ----------------------------
 // 🧠 Exercício 3
 // Use o método toUpperCase() para exibir a frase toda em letras maiúsculas.
 // ----------------------------
-
+console.log(frase.toUpperCase());
 // ----------------------------
 // 🧠 Exercício 4
 // Use o método toLowerCase() para exibir a frase toda em letras minúsculas.
 // ----------------------------
-
+console.log(frase.toLowerCase());
 // ----------------------------
 // 🧠 Exercício 5
 // Verifique se a palavra "incrível" está dentro da frase usando includes()
 // ----------------------------
-
+console.log(frase.includes("incrível"));
 // ----------------------------
 // 🧠 Exercício 6
 // Verifique se a frase começa com "Java" usando startsWith()
 // ----------------------------
-
+console.log(frase.startsWith("Java"));
 // ----------------------------
 // 🧠 Exercício 7
 // Verifique se a frase termina com "l" usando endsWith()
 // ----------------------------
-
+console.log(frase.endsWith("l"));
 // ----------------------------
 // 🧠 Exercício 8
 // Substitua a palavra "incrível" por "fantástico" usando replace()
 // ----------------------------
-
+console.log(frase.replace("incrível", "fantástico"));
 // ----------------------------
 // 🧠 Exercício 9
 // Corte a string para exibir apenas a palavra "JavaScript" usando slice()
 // ----------------------------
-
+console.log(frase.slice(0, frase.indexOf(" ")));
 // ----------------------------
 // 🧠 Exercício 10
 // Divida a frase em palavras usando split(" ") e exiba o array resultante.
 // ----------------------------
-
+console.log(frase.split(" "));
 // ----------------------------
 // 🧠 Exercício 11
 // Una as palavras do array anterior usando join("-") para formar uma nova string.
 // ----------------------------
-
+console.log(frase.split(" ").join("-"));
 // ----------------------------
 // 🧠 Exercício 12
 // Remova os espaços extras da string "   Olá, mundo!   " usando trim()
 // ----------------------------
-
+console.log("   Olá, mundo!   ");
+console.log("   Olá, mundo!   ".trim());
 // ----------------------------
 // 🧠 Exercício 13
 // Crie uma string com o valor "banana".
 // Use padStart() para deixá-la com 10 caracteres, preenchendo com "*"
 // ----------------------------
-
+console.log("banana".padStart(10, "*"));
 // ----------------------------
 // 🧠 Exercício 14
 // Agora use padEnd() para fazer o mesmo, preenchendo com "-"
 // ----------------------------
-
+console.log("banana".padStart(10, "-"));
 // ----------------------------
 // 🧠 Exercício 15
 // Crie uma string "Aprender JavaScript é divertido!".
 // Substitua "divertido" por "essencial" e exiba a nova frase.
 // ----------------------------
-
+console.log(
+  "Aprender JavaScript é divertido!".replace("divertido", "essencial")
+);
 // 📘 DESAFIOS BÔNUS – NÍVEL EXTRA
 // Desafios a seguir exigem mais lógica e/ou o uso combinado de métodos de strings.
 
@@ -89,31 +96,78 @@
 // Crie uma função que receba uma string e retorne essa string invertida.
 // Ex: "javascript" → "tpircsavaj"
 // ----------------------------
-
+const inversorDeString = function (string) {
+  let stringInvertida = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    stringInvertida += string[i];
+  }
+  return stringInvertida;
+};
+console.log(inversorDeString("javascript"));
 // ----------------------------
 // 💡 Desafio Bônus 17
 // Crie uma função que conte quantas vogais (a, e, i, o, u) existem em uma string.
-// Ex: "JavaScript é incrível" → 8 vogais
+// Ex: "JavaScript é incrível" → 7 vogais
 // ----------------------------
+const contadorDeVogais = function (string) {
+  const vogais = "aáeéiíoóuú";
+  let quantidadeDeVogais = 0;
 
+  for (let i = 0; i < string.length; i++) {
+    for (let i2 = 0; i2 < vogais.length; i2++) {
+      if (string[i] === vogais[i2]) {
+        quantidadeDeVogais++;
+      }
+    }
+  }
+  console.log(
+    `A quantidade de vogias na string'${string}' é ${quantidadeDeVogais}.`
+  );
+};
+contadorDeVogais("JavaScript é incrível mesmo!");
 // ----------------------------
 // 💡 Desafio Bônus 18
 // Crie uma função que receba um nome completo e retorne as iniciais.
 // Ex: "Igor Gazineo" → "IG"
 // ----------------------------
-
+const obtemAsIniciaisDoNome = function (nome) {
+  const nomeEmArray = nome.split(" ");
+  let iniciais = "";
+  nomeEmArray.forEach((nome) => {
+    iniciais += nome[0];
+  });
+  return iniciais;
+};
+console.log(obtemAsIniciaisDoNome("Igor Gazineo"));
 // ----------------------------
 // 💡 Desafio Bônus 19
 // Crie uma função que formate um número de telefone no formato (XX) XXXX-XXXX.
 // A função deve receber uma string com apenas os números, ex: "1198765432"
 // ----------------------------
-
+const formatadorDeTelefone = function (telefone) {
+  const telefoneEmString = String(telefone);
+  const primeirosDoisDigitos = telefoneEmString.slice(0, 2);
+  const terceiroAoSextoDigito = telefoneEmString.slice(2, 6);
+  const ultimosDigitos = telefoneEmString.slice(6);
+  console.log(
+    `(${primeirosDoisDigitos}) ${terceiroAoSextoDigito}-${ultimosDigitos}`
+  );
+};
+formatadorDeTelefone(1198765432);
 // ----------------------------
 // 💡 Desafio Bônus 20
 // Crie uma função que transforme a primeira letra de cada palavra de uma frase em maiúscula.
 // Ex: "javascript é incrível" → "Javascript É Incrível"
 // ----------------------------
-
+const primeiraLetraParaMaiuscula = function (string) {
+  const arrayDePalavrasFormatado = [];
+  const arrayDePalavras = string.split(" ");
+  for (const palavra of arrayDePalavras) {
+    arrayDePalavrasFormatado.push(palavra[0].toUpperCase() + palavra.slice(1));
+  }
+  console.log(arrayDePalavrasFormatado.join(" "));
+};
+primeiraLetraParaMaiuscula("javascript é incrível");
 // ----------------------------
 // 💡 Desafio Bônus 21
 // Crie uma função que receba uma string e retorne quantas palavras ela contém.
